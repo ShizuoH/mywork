@@ -25,5 +25,9 @@ Caskの編集
 $ cask install
 ```
 
-
+## gitの設定
+* editorをemacsにする
+```
+$ git config --global core.editor 'emacs'
+```
 
