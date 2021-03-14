@@ -21,6 +21,8 @@ mybashrcでPATHを追加
 $ cask upgrade ;; Caskのアップグレード
 $ cd ~/.emacs.d
 $ cask init ;; Caskファイルの初期化
+Caskの編集
+$ cask install
 ```
 
 
