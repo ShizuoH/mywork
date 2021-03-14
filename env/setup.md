@@ -12,3 +12,16 @@ $ make
 $ sudo make install
 ```
 
+### cask
+* 参考:http://vdeep.net/emacs-cask
+
+```
+$ curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+mybashrcでPATHを追加
+$ cask upgrade ;; Caskのアップグレード
+$ cd ~/.emacs.d
+$ cask init ;; Caskファイルの初期化
+```
+
+
+
