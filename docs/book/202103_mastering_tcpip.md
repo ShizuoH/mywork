@@ -57,3 +57,56 @@
 
 * SDx
   * Software Designed (anything)
+
+### 第二章：TCP/IP 基礎知識
+
+#### keyword
+* TCP (Transmission Control Protocol)
+* IP (Internet Protocol)
+* RFC (Request For Comments)
+* NOC (同一ネットワーク内で、ハブとなり階層を一つあげるポイント）
+* IX (ネットワークの運用者や運用方針が異なるネットワークのブリッジ)
+* ISP (Internet Service Provider)
+* ICMP (Internet Control Message Protocol)
+* ARP (Address Resolution Protocol)
+  * IPアドレスからMACアドレスを取得するプロトコル
+* SMTP (Simple Mail Transfer Protocol)
+* SNMP (Simple Network Management Protocol)
+
+#### 2.2 TCP/IPの標準化
+* TCP/IPという言葉は単にTCPとIPの２つのプロトコルだけでなく、ICMPやTCP,UDP,TELNET,FTP,HTTPなどの、インターネット・プロトコル群を指す
+* TCP/IPは標準化の精神で作られている
+  * さらにTCP/IPは実用性が高いプロトコルに仕上がっている
+  * OSIが普及しなかったのは、動作するプロトコルをすぐに作れなかったことと、急速な変化に対応できるようなプロトコルの改良を行える仕組みがなかったことが原因と言われている
+* 各プロトコルが、STD,RFCの番号で管理されていることは知っておく
+  * STDがプロトコルに対する仕様、RFCは各変更時の変更仕様
+  
+#### 2.4 TCP/IPの階層モデル
+
+* ハードウェア,ネットワークインタヘース層,インターネット層,トランスポート層,アプリケーション層
+* インターネット層
+  * IP, ICMP, ARP
+* トランスポート層
+  * TCP, UDP
+    * TCPはコネクション型、UDPはコネクションレス型
+* アプリケーション層
+  * Webアクセス(www), HTTP, HTML, SMTP, TELNET, SSH, FTP, SNMP
+
+#### 2.5 TCP/IPの階層モデルと通信例
+
+* データリンク層(イーサネットヘッダ)
+  * 宛先MACアドレス
+  * 送信元MAXアドレス
+  * イーサネットタイプ
+* ネットワーク層(IPヘッダ)
+  * 送信元IPアドレス
+  * 宛先IPアドレス
+  * プロトコルタイプ
+* トランスポート層(TCP/UDPヘッダ)
+  * 送信元ポート番号
+  * 宛先ポート番号
+* データ
+* データリンク層(イーサネットトレイラ）
+  * FCS
+
+
